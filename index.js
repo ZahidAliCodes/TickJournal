@@ -25,7 +25,7 @@ const quotes = [
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Repellat facilis neque cupiditate esse qui commodi at sint quos aperiam autem. Optio quos modi, laudantium sed odit esse iste atque velit ad non aperiam repellendus aspernatur amet nobis reprehenderit! Minus, illo!',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
