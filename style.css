@@ -600,8 +600,9 @@ footer{
     .client-name {
         font-size: 12px;
     }
-    .login-form-container{
-        width: fit-content !important;
+    .login-form-container {
+        width: 100% !important;
+        margin: 0 !important;
     }
 
 }
