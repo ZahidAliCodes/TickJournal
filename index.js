@@ -31,37 +31,37 @@ document.addEventListener('click', (e) => {
 let currentIndex = 0;
 const quotes = [
     {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: '../media/Profile.png',
+        image: 'Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
