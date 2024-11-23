@@ -165,6 +165,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     margin: 30px 0 0 0;
+    width: 100%;
 }
 .feature-headings h3 {
     display: inline-block;
@@ -189,8 +190,8 @@ nav ul li a{
 .cards-main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    max-width: 1000px;
     gap: 20px;
+    width: 100%;
     
 }
 .futr-card{
@@ -199,12 +200,12 @@ nav ul li a{
     gap: 15px;
     background-color: var(--secondary-color);
     height: 236px;
-    width: 320px;
+    width: 100%;
     border-radius: 10px;
     padding: 20px;
 }
 .futr-card .futr-icon{
-    height: 40px;
+    min-height: 40px;
     width: 40px;
     background-color: var(--white);
     border-radius: 50%;
@@ -231,7 +232,7 @@ nav ul li a{
 }
 .plans-card{
     height: 446px;
-    width: 320px;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--secondary-color);
@@ -320,7 +321,7 @@ nav ul li a{
     max-height: 273px;
 }
 .quote-slide {
-    width: 830px;
+    width: 76%;
     height: 294px;
     padding: 40px;
     margin-bottom: 120px;
@@ -463,4 +464,142 @@ footer{
 }
 .ft-main ul{
     gap: 20px;
+}
+.menu-btn{
+    display: none;
+}
+.menu-btn{
+    width: 44px;
+    height: 42px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 42px;
+}
+@media screen and (max-width: 769px){
+    nav {
+        display: none; 
+        background-color: var(--secondary-color);
+        border-radius: 8px;
+        height: 100%;
+        padding: 20px;
+    }
+    .signup-btn,
+    nav ul {
+        gap: 25px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .signup-btn{
+        padding: 22px 0 0 0;
+        gap: 10px;
+    }
+    .gradient-box{
+        margin: 0;
+    }
+    nav.active {
+        display: block; 
+    }
+    .gradient-box{
+        background-image: var(--color-shadow);
+        padding: 1.6px;
+    }
+    .gradient-box a{
+        padding: 9.4px;
+        background-color: var(--primary-color);
+        border-radius: 4px;
+        width: 100%;
+    }
+    .shadow-bg.active .shodow-active{
+        position: fixed;
+        background-image: var(--color-shadow);
+        top: 95px; 
+        right: 10px;
+        z-index: 10;
+        width: 226px;
+        height: 234px;
+        border-radius: 10px;
+        padding: 1.6px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .futr-card{
+        gap: 7px;
+    }
+    .quote-slide{
+        height: auto;
+        width: 100%;
+    }
+}
+.menu-btn.active{
+   background-image: var(--color-shadow);
+}
+.menu-btn.active img{
+    filter: invert(27%) sepia(53%) saturate(413%) hue-rotate(195deg) brightness(0%) contrast(100%);
+
+ }
+@media screen and (max-width: 607px){
+    .ft-main{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ft-main ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .login-form-container {
+        width: fit-content !important;
+        padding: 0 20px;
+    }
+    .Social-link a span{
+        width: 25%;
+    }
+    .main-heading{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .main-heading h1{
+        font-size: 38px;
+        line-height: 47.5px;
+    }
+    .cards-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .futr-card {
+        gap: 14px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .feature-headings h1{
+        padding: 0 30px;
+    }
+    .quote-content {
+        justify-content: start;
+    }
+    .quote-text p {
+        min-height: 230px;
+        max-height: 230px;
+    }
+}
+@media screen and (max-width: 350px){
+    .ft-container{
+        padding: 20px;
+    }
+    .Social-link a span{
+        width: 20%;
+    }
+    .quote-text p {
+        min-height: 200px;
+        max-height: 200px;
+        font-size: 12px;
+    }
+    .client-location{
+        font-size: 10px;
+    }
+    .client-name {
+        font-size: 12px;
+    }
+
 }
