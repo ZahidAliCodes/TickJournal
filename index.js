@@ -1,38 +1,68 @@
+// header js
+const menuBtn = document.querySelector('.menu-btn'); 
+const nav = document.querySelector('nav');         
+const shadowBg = document.querySelector('.shadow-bg'); 
+const gradientBox = document.querySelector('.gradient-box'); 
+
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+
+    nav.classList.toggle('active');
+
+    shadowBg.classList.toggle('active');
+
+    gradientBox.classList.toggle('active', shadowBg.classList.contains('active'));
+
+    menuBtn.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+        nav.classList.remove('active');
+        
+        shadowBg.classList.remove('active');
+        gradientBox.classList.remove('active');
+
+        menuBtn.classList.remove('active');
+    }
+});
+
+
 let currentIndex = 0;
 const quotes = [
     {
-        image: 'Profile.png',
+        image: '../media/Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: 'Profile.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Repellat facilis neque cupiditate esse qui commodi at sint quos aperiam autem. Optio quos modi, laudantium sed odit esse iste atque velit ad non aperiam repellendus aspernatur amet nobis reprehenderit! Minus, illo!',
-        clientName: 'Johnson doe',
-        clientLocation: 'Acquilo Founder'
-      },
-      {
-        image: 'Profile.png',
+        image: '../media/Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: 'Profile.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Repellat facilis neque cupiditate esse qui commodi at sint quos aperiam autem. Optio quos modi, laudantium sed odit esse iste atque velit ad non aperiam repellendus aspernatur amet nobis reprehenderit! Minus, illo!',
+        image: '../media/Profile.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: 'Profile.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Repellat facilis neque cupiditate esse qui commodi at sint quos aperiam autem. Optio quos modi, laudantium sed odit esse iste atque velit ad non aperiam repellendus aspernatur amet nobis reprehenderit! Minus, illo!',
+        image: '../media/Profile.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       },
       {
-        image: 'Profile.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Repellat facilis neque cupiditate esse qui commodi at sint quos aperiam autem. Optio quos modi, laudantium sed odit esse iste atque velit ad non aperiam repellendus aspernatur amet nobis reprehenderit! Minus, illo!',
+        image: '../media/Profile.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+        clientName: 'Johnson doe',
+        clientLocation: 'Acquilo Founder'
+      },
+      {
+        image: '../media/Profile.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
         clientName: 'Johnson doe',
         clientLocation: 'Acquilo Founder'
       }
