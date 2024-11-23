@@ -549,7 +549,6 @@ footer{
         justify-content: space-between;
     }
     .login-form-container {
-        width: fit-content !important;
         padding: 0 20px;
     }
     .Social-link a span{
