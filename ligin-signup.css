@@ -183,3 +183,15 @@ form.login-form {
     color: var(--white);
 }
 
+@media screen and (max-width: 500px){
+    .shodow-active{
+        display: none;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .header-container{
+        justify-content: center;
+    }
+    
+}
