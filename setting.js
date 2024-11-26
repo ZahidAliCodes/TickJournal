@@ -2,7 +2,7 @@
  const imagePreview = document.getElementById('imagePreview');
  const deleteButton = document.getElementById('deleteButton');
 
- imagePreview.src = "../media/preview.svg";
+ imagePreview.src = "preview.svg";
 
  fileInput.addEventListener('change', function () {
    const file = fileInput.files[0];
@@ -20,7 +20,7 @@
  });
 
  function deleteImage() {
-   imagePreview.src = '../media/preview.svg'; 
+   imagePreview.src = 'preview.svg'; 
    deleteButton.style.display = 'block';
    fileInput.value = ''; 
  }
