@@ -527,6 +527,7 @@
     color: var(--white);
 }
 .input-bg {
+    overflow: hidden;
     height: 38px;
     width: 100%;
     border-radius: 6px;
